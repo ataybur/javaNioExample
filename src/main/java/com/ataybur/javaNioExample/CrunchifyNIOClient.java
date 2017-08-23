@@ -5,6 +5,7 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class CrunchifyNIOClient {
 	public static void main(String[] args) throws IOException, InterruptedException {
@@ -22,7 +23,7 @@ public class CrunchifyNIOClient {
 		companyDetails.add("IBM");
 		companyDetails.add("Google");
 		companyDetails.add("Crunchify");
- 
+
 		for (String companyName : companyDetails) {
  
 			byte[] message = new String(companyName).getBytes();

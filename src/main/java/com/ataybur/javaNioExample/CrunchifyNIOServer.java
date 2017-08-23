@@ -66,7 +66,8 @@ public class CrunchifyNIOServer {
  
 					log("Message received: " + result);
  
-					if (result.equals("Crunchify")) {
+					if (result.equals("q")) {
+//						if (result.equals("Crunchify")) {
 						crunchifyClient.close();
 						log("\nIt's time to close connection as we got last company name 'Crunchify'");
 						log("\nServer will keep running. Try running client again to establish new connection");
